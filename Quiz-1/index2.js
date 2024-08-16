@@ -21,8 +21,10 @@ const ciudades =[
 function mayorespoblaciones (array){
 let ciudadencontrada = ciudades[0]
     ciudades.forEach((ciudad)=>{
-        if (ciudad.poblacion < ciudad.poblacion){
-            ciudadencontrada.push(ciudad)
+        if (ciudad.poblacion > ciudadencontrada.poblacion){
+            console.log (ciudad)
+
+            ciudadencontrada = ciudad
         }
     })
 return ciudadencontrada
